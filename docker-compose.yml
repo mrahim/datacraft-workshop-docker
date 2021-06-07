@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+   
+
+  app:
+    build: 
+      context: .
+    container_name: "datacraft-docker"
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+    env_file:
+       - .env
+           
