@@ -19,7 +19,7 @@ def introduction():
     st.title("**Welcome to playground 🧪**")
     st.subheader(
         """
-        This is a place where you can get familiar with machine learning models directly from your browser
+        This is a place where you can get familiar with machine learning models directly from your browser.
         """
     )
 
