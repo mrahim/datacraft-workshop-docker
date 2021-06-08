@@ -1,10 +1,23 @@
-FROM python:3.9-slim
+#FROM python:3.7  
+from python:3.7-slim
 
-ENV DASH_DEBUG_MODE True
-ADD ./indexe.py /index.py
-ADD ./requirements-dash.txt /requirements.txt
-WORKDIR /
-RUN set -ex && \
-    pip install -r requirements.txt
+# Setting Working directory different from root
+WORKDIR / 
+
+# Installing requirements
+ADD ./requirements.txt /requirements.txt
+RUN pip3 install -r requirements.txt --no-cache-dir
+#RUN pip3 install -r requirements.txt --no-cache-dir
+
 EXPOSE 8050
-CMD ["python", "index.py"]
+
+# Add the config.toml file
+ADD .streamlit/ /.streamlit
+ADD /css/ /css/
+ADD /utils/ /utils/
+ADD /models/ /models/
+ADD /images/ /images/ 
+
+ADD /index.py  /index.py 
+ 
+CMD ["streamlit", "run" ,"/index.py"]
