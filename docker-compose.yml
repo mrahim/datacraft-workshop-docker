@@ -7,7 +7,7 @@ services:
       context: .
     container_name: "datacraft-docker"
     ports:
-      - "80:80"
+      - "8050:8050"
     volumes:
       - ./:/app
     env_file:
