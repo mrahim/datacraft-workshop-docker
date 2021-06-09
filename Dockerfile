@@ -9,7 +9,7 @@ ADD ./requirements.txt /requirements.txt
 RUN pip3 install -r requirements.txt --no-cache-dir
 #RUN pip3 install -r requirements.txt --no-cache-dir
 
-EXPOSE 8050
+EXPOSE 8501
 
 # Add the config.toml file
 ADD .streamlit/ /.streamlit
