@@ -20,7 +20,7 @@ from utils.ui import (
 )
 
 st.set_page_config(
-    page_title="Eki x Datacraft workshop", layout="wide", page_icon="./images/flask.png"
+    page_title="EkixDatacraft workshop", layout="wide", page_icon="./images/flask.png"
 )
 
 st.image(["./images/ekidatacraft.png"],width=300)

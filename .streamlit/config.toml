@@ -56,7 +56,7 @@ folderWatchBlacklist = ['']
 
 # The port where the server will listen for client and browser connections.
 # Default: 8501
-port = 8050
+port = 8501
 enableXsrfProtection=false
 
 # Enables support for Cross-Origin Request Sharing, for added security.
@@ -77,5 +77,5 @@ serverAddress = "https://datacraft-docker-app.azurewebsites.net/"
 
 # Port that the browser should use to connect to the server when in liveSave mode.
 # Default: whatever value is set in server.port.
-# serverPort = 8050
+# serverPort = 8501
  
